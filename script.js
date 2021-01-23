@@ -1,0 +1,3 @@
+function calcularImc(){
+    alert('teste')
+}
