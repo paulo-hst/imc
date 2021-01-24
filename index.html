@@ -8,30 +8,33 @@
 </head>
 
 <body>
-    <div class="container grid">
-        <h1>Calculadora de IMC</h1>
+    <div class="container">
+        <div class="header">
+            <h1>Calculadora de IMC</h1>
+        </div>
 
-        <section class="content">
-            <p>Digite o peso:
-                <input placeholder="Peso (em kg)" type="number"  min="1" max="250">
-            </p>
-            
-            <p">Digite a altura:
-                <input placeholder="Altura (em cm)" type="number" min="1" max="200">
-            </p>
-            <button onclick="calcularImc()">Calcular</button>
-            
-            <p>Seu IMC é: XXX e você está XXX.</p>    
-        </section>
-
-        <section class="description">
-            <h2>Índice de Massa Corpórea - IMC</h2>
-            <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
-    
-                O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+        <div class="imc">
+            <section class="content">
+                <p>Digite o peso (em kg)
+                    <input placeholder="ex: 85.5" type="number" id="weight" min="1" max="400" required>
+                </p>
                 
-            </p>
-        </section>
+                <p>Digite a altura (em cm)
+                    <input placeholder="ex: 175" type="number" id="height" min="1" max="200" required>
+                </p>
+                
+                <button onclick="render()">Calcular</button>
+            </section>
+    
+            <section class="description">
+                <p>O <strong>IMC</strong> é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+        
+                    O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+                    
+                </p>
+            </section>
+        </div>
+       
     </div>
     
 
