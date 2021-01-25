@@ -148,6 +148,46 @@ body{
     text-align: center;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+/* mobile */
+
+@media screen and (max-width: 600px){
+
+    .container{
+        max-width: 350px;
+        max-height: 350px;
     
-    
+    }    
+    .container .header{
+        margin: 23px 0;
+        padding: 0px 0px;
+        justify-content: center;
+        font-size: 0.8rem;
+    }    
+    .container .content{
+        padding: 0px 15px;
+        font-size: 1.0rem;     
+    } 
+    .container .description{
+        padding: 0px 5px;
+    }
+    .container .description p{
+        font-size: 0.75rem;
+        text-align: justify;
+        
+    }
+    .container .description .displayImc{
+        width: 150px;
+        margin: 20px;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    .container .description .displayImcClass{
+        width: 200px;
+        padding: 10px 0px;
+
+        text-align: center;
+        font-size: 1.2rem;
+    }
 }

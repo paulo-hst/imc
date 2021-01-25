@@ -1,17 +1,23 @@
 const weight = document.querySelector('#weight')
 const height = document.querySelector('#height')
+const inputs = document.querySelector('.content')
+
 const descriptionContainer = document.querySelector('.description')
 const descriptionText = document.querySelector('.description p')
+
+const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
 
 function render(){
     const weightValue = weight.value
     const heightValue = height.value 
+    
 
     if(weightValue == '' || heightValue == ''){
         alert('Valor Inválido!')
     }else{ 
         fixes()
-        
+
         const imc = (weightValue / (Math.pow(heightValue,2))*10000).toFixed(2)
     
         if(imc <= 18.5){
@@ -31,6 +37,10 @@ function render(){
             imcElements(imc, imcClass)       
         }
 
+        if(descriptionContainer.childNodes[5]){
+            descriptionContainer.childNodes[3].remove(descriptionContainer.childNodes[3])
+            descriptionContainer.childNodes[3].remove(descriptionContainer.childNodes[3])
+        }
     }  
 }
 
@@ -50,9 +60,16 @@ function imcElements(imc, text){
     imcClass.appendChild(imcClassText)
     descriptionContainer.appendChild(imcClass)
 
+
+
 }
 
 function fixes(){
+    // const width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     weight.value = ''
     height.value = ''
+
+    // inputs.style.display = 'none'
+    // descriptionContainer.style.display = 'block'
+
 }
