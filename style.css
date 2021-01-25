@@ -122,6 +122,32 @@ body{
 
 .container .description p{
     padding: 5px;
-    text-align: center; 
+    text-align: center;
+    
+}
+
+.container .description .displayImc{
+    width: 200px;
+    padding: 20px;
+    margin: 0 auto;
+
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    
+    background-color: #857f2f;
+    border-radius: 50px;
+    
+}
+
+.container .description .displayImcClass{
+    width: 200px;
+    padding: 15px;
+    margin: 10px auto;
+
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    
     
 }
